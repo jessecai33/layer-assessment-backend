@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :game do
-    gid { Faker::Number.unqiue.number(digits: 8) }
+    gid { Faker::Number.unique.number(digits: 8) }
     genres { Faker::Game.genre }
     name { Faker::Game.title }
     platforms { Faker::Game.platform }

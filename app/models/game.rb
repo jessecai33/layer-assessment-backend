@@ -11,7 +11,7 @@ class Game < ApplicationRecord
   end
 
   def self.fetch(query)
-    # TODO fetch games from igdb
-    []
+    igdb_fetch = IgdbFetch.new
+    igdb_fetch.search(query)
   end
 end

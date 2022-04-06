@@ -13,8 +13,8 @@ RSpec.describe Game, type: :model do
 
   describe "functions" do
     describe "search" do
-      it 'should return 0 result when searching for `pokemon`' do
-        expect(Game.search('pokemon').length).to eq(0)
+      it 'should return 5 result when searching for `pokemon`' do
+        expect(Game.search('pokemon').length).to eq(5)
       end
 
       it 'should return 1 result when searching for `zelda`' do

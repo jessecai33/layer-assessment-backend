@@ -1,24 +1,13 @@
-# README
+# Layer Tech Challenge Back-End
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the backend implementation of the tech challenge.
 
-Things you may want to cover:
+## How to run
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. clone the repo
+2. `bundle install` install gems
+3. `rails db:create` create database
+4. `rails db:migrate` migrate database
+5. put `TWITCH_AUTH_URL`, `IGDB_BASE_URL`, `IGDB_CLIENT_ID`, `IGDB_CLIENT_SECRET` in `.env` file
+6. `rspec` run tests
+7. `rails s` run server on `localhost:3000`
